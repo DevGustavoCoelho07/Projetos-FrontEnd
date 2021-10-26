@@ -1,0 +1,118 @@
+    .fundov {
+        background-color: rgb(139, 48, 66);
+        height: 50px;
+    }
+    
+    .fundof {
+        background-color: rgb(100, 32, 46);
+        height: 100px;
+    }
+    
+    .fundoz {
+        background-color: rgb(87, 88, 190);
+        height: 50px;
+    }
+    
+    .nav-link {
+        color: white;
+    }
+    
+    .nav-link.nv {
+        color: white;
+    }
+    
+    .nav-link.nv:hover {
+        color: rgb(235, 134, 97);
+    }
+    
+    .pizza-main {
+        background-image: url("assets/pizza-desfocada.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 430px;
+        text-align: center;
+        border-bottom: 3px solid rgb(139, 48, 66);
+    }
+    
+    .pizza-main>.btn-acessa:hover {
+        background-color: rgb(179, 91, 59);
+    }
+    
+    .pizza-main>.btn-acessa {
+        font-size: 1.4rem;
+        background-color: rgb(235, 134, 97);
+        border: none;
+        position: absolute;
+        top: 54%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .pizza-main>.btn-saiba {
+        color: white;
+        border-color: white;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 54%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .pizza-main>h1 {
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .pizza-main>p {
+        color: white;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .content-main {
+        background-image: url("assets/pexels-photo-326279.webp");
+        background-size: cover;
+        background-position-y: -254px;
+        background-repeat: repeat;
+        text-align: center;
+        /* background-color: rgb(235, 134, 97); */
+        height: 430px;
+    }
+    
+    .content-extra {
+        background-color: tomato;
+        /* background-color: rgb(235, 134, 97); */
+        height: 300px;
+        border-radius: 5px;
+    }
+    
+    .content-carrousel {
+        background-color: black;
+        height: 430px;
+    }
+    
+    .content-carrousel>h3,
+    p {
+        color: white;
+    }
+    
+    .content-info {
+        border-top: 2px solid white;
+        padding-top: 30px;
+        background-color: black;
+        height: 400px;
+    }
+    
+    .pizza-img {
+        /* position: relative;
+    width: 100%;
+    height: 490px;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    }
