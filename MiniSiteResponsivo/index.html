@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    /*
+                                                                                                - Ao clicar no hamburguer , a id lista fica visivel , e o hamburguer anterior fica invisivel , assim
+                                                                                                deixando outro hamburguer visivel que logo quando clicado remove a classe e transforma no hamburguer anterior
+
+                                                                                                */
+
+
+    // function abrir() {
+    //     fechar();
+    //     var hamInicio = document.getElementById("responsiveClick");
+    //     var hamClic = document.getElementById("responsiveClicado");
+    //     var menu = document.getElementById("lista");
+
+    //     // hamInicio.style.display = "block";
+    //     // hamInicio.style.float = "none";
+    //     hamInicio.style.display = "none";
+    //     hamClic.style.display = "inline-block;"
+    //     menu.style.display = "lista";
+    //     menu.style.float = "lista";
+
+    // }
+
+    // function fechar() {
+    //     var hamInicio = document.getElementById("responsiveClick");
+    //     var hamClic = document.getElementById("responsiveClicado");
+    //     var menu = document.getElementById("lista");
+    //     hamInicio.style.display = "inline";
+    //     hamClic.style.display = "none;"
+    //     menu.style.display = "none";
+    //     menu.style.float = "none";
+
+    }
+</script>
+
+<body>
+    <div class="main">
+
+        <nav>
+
+            <ul>
+                <i class="fas fa-bars " id="responsiveClick" onclick="abrir(); fechar();"></i >
+                <input type="checkbox" name="cheks" id="cheks">
+                <!-- <i class="fas fa-bars "  id="responsiveClicado"onclick=" abrir () ;"></i > -->
+                <li  id="lista">Produtos</li>
+                <li id="lista" >Sobre</li>
+                <li id="lista">Home</li>
+
+            </ul>
+            
+            <!-- <ul class="lista">
+                <li id="lista">Produtos</li>
+                <li id="lista" >Sobre</li>
+                <li id="lista">Home</li>
+
+            </ul> -->
+        </nav>
+
+
+        <!-- <div class="img-blur"> -->
+
+        <div class="img-main">
+
+            <div class="main-content">
+                <h1>Um texto qualquer</h1>
+                <h5> um subtitulo qualquer</h5>
+                <br>
+                <button>clique aqui</button>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- <h1>Um texto qualquer</h1>
+            <h5> um subtitulo qualquer</h5>
+            <br>
+            <button>clique aqui</button> -->
+        <!-- </div> -->
+
+
+    </div>
+    <!-- https://www.html5webtemplates.co.uk/wp-content/uploads/2020/templates/elements/-->
+    <section class="main-container">
+        <div class="other-side">
+
+            <h2>Lorem ipsum dolor</h2>
+            <p>Ipsum dolor tempus commodo turpis adipiscing adipiscing in tempor placerat sed amet accumsan enim lorem sem turpis ut. Massa amet erat accumsan curae blandit porttitor faucibus in nisl nisi volutpat massa mi non nascetur.</p>
+        </div>
+
+        <div class="icones-info">
+            <!-- ícone 1-->
+            <div class="icon-1">
+                <i class="fas fa-balance-scale"></i>
+                <span><b>Natoque phasellus</b></span>
+                <p>Ipsum dolor tempus commodo amet sed accumsan et adipiscing blandit porttitor sed faucibus.</p>
+    </div>
+    <!-- ícone 2-->
+    <div class="icon-2">
+        <i class="fas fa-balance-scale"></i>
+        <span><b>Natoque phasellus</b></span>
+        <p>Ipsum dolor tempus commodo amet sed accumsan et adipiscing blandit porttitor sed faucibus.</p>
+    </div>
+    <!-- ícone 3-->
+    <div class="icon-3">
+        <i class="fas fa-balance-scale"></i>
+        <span><b>Natoque phasellus</b></span>
+        <p>Ipsum dolor tempus commodo amet sed accumsan et adipiscing blandit porttitor sed faucibus.</p>
+    </div>
+    <!-- ícone 4-->
+    <div class="icon-4">
+        <i class="fas fa-balance-scale"></i>
+        <span><b>Natoque phasellus</b></span>
+        <p>Ipsum dolor tempus commodo amet sed accumsan et adipiscing blandit porttitor sed faucibus.</p>
+    </div>
+    <!-- ícone 5-->
+    <div class="icon-5">
+        <i class="fas fa-balance-scale"></i>
+        <span><b>Natoque phasellus</b></span>
+        <p>Ipsum dolor tempus commodo amet sed accumsan et adipiscing blandit porttitor sed faucibus.</p>
+    </div>
+    <!-- ícone 6-->
+    <div class="icon-6">
+        <i class="fas fa-balance-scale"></i>
+        <span><b>Natoque phasellus</b></span>
+        <p>Ipsum dolor tempus commodo amet sed accumsan et adipiscing blandit porttitor sed faucibus.</p>
+    </div>
+    </div>
+
+    <!-- </div> -->
+    </section>
+    <div class="barra">
+        <span>Sed faucibus et consequat </span> <button>clicar</button>
+    </div>
+    <footer>
+        <div class="social-footer">
+            <div class="social-icons">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+            </div>
+            <p>Desenvolvido por Gustavo 2021</p>
+
+        </div>
+    </footer>
+
+</body>
+<script src="https://kit.fontawesome.com/cbf4951b43.js" crossorigin="anonymous"></script>
+<script>
+    window.onscroll = () => {
+        fix();
+    }
+    const navScroll = document.getElementsByTagName("nav")[0];
+    const navTop = navScroll.offsetTop;
+
+
+    function fix() {
+        if (window.pageYOffset >= navTop) {
+            navScroll.classList.add("nav-fixed");
+        } else {
+            nav.classList.remove("nav-fixed");
+        }
+
+
+    }
+</script>
+
+</html>
