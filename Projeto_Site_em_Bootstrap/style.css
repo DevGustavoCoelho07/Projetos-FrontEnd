@@ -7,45 +7,8 @@ body {
     background-color: rgb(20, 20, 20)!important;
 }
 
-.main-footer {
-    background-color: black;
-    border-top: 1px solid white;
-    height: 210px;
-    background-color: var(--vermelhonav);
-    color: white;
-    text-align: center;
-}
-
-.main-footer>i {
-    color: var(--alaranjado);
-    font-size: 1.5rem;
-}
-
-.cart-i>i {
-    color: var(--alaranjado);
-    font-size: 1.5rem;
-}
-
-.cart-i>span {
-    color: white;
-}
-
-.phone-i>i {
-    color: var(--alaranjado);
-    font-size: 1.5rem;
-}
-
-.phone-i>span {
-    color: white;
-}
-
-.pizza-i>i {
-    color: var(--alaranjado);
-    font-size: 1.5rem;
-}
-
-.pizza-i>span {
-    color: white;
+.navbar-brand {
+    font-family: 'Lobster', cursive;
 }
 
 .nav-link {
@@ -118,7 +81,6 @@ body {
     background-position-x: -200px;
     background-repeat: no-repeat;
     text-align: center;
-    /* background-color: rgb(235, 134, 97); */
     height: 430px;
 }
 
@@ -141,7 +103,6 @@ body {
 
 .content-extra {
     background-color: tomato;
-    /* background-color: rgb(235, 134, 97); */
     height: 320px;
     width: 60%;
     font-size: 15px;
@@ -166,6 +127,47 @@ p {
     padding-top: 30px;
     background-color: black;
     height: 400px;
+}
+
+.cart-i>i {
+    color: var(--alaranjado);
+    font-size: 1.5rem;
+}
+
+.cart-i>span {
+    color: white;
+}
+
+.phone-i>i {
+    color: var(--alaranjado);
+    font-size: 1.5rem;
+}
+
+.phone-i>span {
+    color: white;
+}
+
+.pizza-i>i {
+    color: var(--alaranjado);
+    font-size: 1.5rem;
+}
+
+.pizza-i>span {
+    color: white;
+}
+
+.main-footer {
+    background-color: black;
+    border-top: 1px solid white;
+    height: 210px;
+    background-color: var(--vermelhonav);
+    color: white;
+    text-align: center;
+}
+
+.main-footer>i {
+    color: var(--alaranjado);
+    font-size: 1.5rem;
 }
 
 .pizza-img {
