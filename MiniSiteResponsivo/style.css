@@ -14,23 +14,11 @@
     visibility: visible;
 }
 
-
-/* #cheks:checked+#lista {
-    display: inline-block;
-    float: none;
-} */
-
 .main {
     background-color: black;
     color: rgb(255, 255, 254);
     height: 600px;
 }
-
-
-/* .img-main {
-background-color: black;
-height: 500px;
-} */
 
 .img-main {
     background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?cs=srgb&dl=pexels-fauxels-3184460.jpg&fm=jpg");
@@ -139,139 +127,29 @@ nav {
     margin-right: 10px;
 }
 
-.icon-1>i {
-    font-size: 50px;
-    margin-right: 25px;
-}
-
-.icon-1>span {
-    font-size: 25px;
-    margin-right: 25px;
-}
-
-.icon-1>p {
-    font-size: 15px;
-    margin-left: 90px;
-    display: block;
-}
-
-.icon-2>i {
-    font-size: 50px;
-    margin-left: 25px;
-}
-
-.icon-2>span {
-    font-size: 25px;
-    margin-left: 25px
-}
-
-.icon-2>p {
-    font-size: 15px;
-    margin-left: 117px;
-    display: block;
-}
-
-.icon-3>i {
-    font-size: 50px;
-    margin-left: 25px
-}
-
-.icon-3>span {
-    font-size: 25px;
-    margin-left: 25px
-}
-
-.icon-3>p {
-    font-size: 15px;
-    margin-left: 117px;
-    display: block;
-}
-
-.icon-4>i {
-    font-size: 50px;
-    margin-right: 25px;
-}
-
-.icon-4>span {
-    font-size: 25px;
-    margin-right: 25px;
-}
-
-.icon-4>p {
-    font-size: 15px;
-    margin-left: 90px;
-    display: block;
-}
-
-.icon-5>i {
-    margin-right: 25px;
-    font-size: 50px;
-}
-
-.icon-5>span {
-    margin-right: 25px;
-    font-size: 25px;
-}
-
-.icon-5>p {
-    font-size: 15px;
-    margin-left: 90px;
-    display: block;
-}
-
-.icon-6>i {
-    font-size: 50px;
-    margin-left: 25px
-}
-
-.icon-6>span {
-    font-size: 25px;
-    margin-left: 25px
-}
-
-.icon-6>p {
-    font-size: 15px;
-    margin-left: 117px;
-    display: block;
-}
-
-.icon-1 {
-    display: block;
-    float: right;
-}
-
-.icon-2 {
-    display: block;
-    float: left;
-    /* margin-left: 176px; */
-}
-
-.icon-3 {
-    display: block;
-    float: left;
-}
-
-.icon-4 {
-    float: right;
-    display: block;
-}
-
-.icon-5 {
-    float: right;
-    display: block;
-}
-
-.icon-6 {
-    float: left;
-    display: block;
-}
-
 .icones-info {
-    /* margin-left: 25px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-right: 25px;
 }
 
-.social-footer {
+.icon-display>i {
+    font-size: 50px;
+}
+
+.icon-display>p {
+    margin-left: 90px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.icon-display>span {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+*/ .social-footer {
     background-color: white;
     height: 400px;
     text-align: center;
@@ -310,60 +188,23 @@ nav {
         float: none;
         display: none;
     }
-    .icon-1 {
-        float: left;
+    .icones-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-right: 25px;
     }
-    .icon-2 {
-        float: left;
+    .icon-display>i {
+        font-size: 50px;
     }
-    .icon-1>p {
-        margin: 0 0 0 117px;
+    .icon-display>p {
+        margin-left: 90px;
+        font-size: 15px;
+        padding-bottom: 5px;
     }
-    .icon-1>i {
-        margin-left: 25px;
-    }
-    .icon-3>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-3>i {
-        margin-left: 25px;
-    }
-    .icon-4>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-4>i {
-        margin-left: 25px;
-    }
-    .icon-5>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-5>i {
-        margin-left: 25px;
-    }
-    .icon-6>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-6>i {
-        margin-left: 25px;
-    }
-    .icon-3 {
-        float: left;
-        margin: 0;
-    }
-    .icon-4 {
-        float: left;
-        margin: 0;
-    }
-    .icon-5 {
-        float: left;
-        margin: 0;
-    }
-    .icon-6 {
-        float: left;
-        margin: 0;
-    }
-    .main-container {
-        height: 900px;
+    .icon-display>span {
+        margin-left: 20px;
+        font-size: 25px;
     }
 }
 
@@ -379,7 +220,7 @@ nav {
     }
     #cheks:checked~#lista {
         display: block;
-        float: none;
+        float: left;
         background-color: black;
         color: white;
         padding: 15px;
@@ -410,60 +251,27 @@ nav {
         float: none;
         display: none;
     }
-    .icon-1 {
-        float: left;
-    }
-    .icon-2 {
-        float: left;
-    }
-    .icon-1>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-1>i {
-        margin-left: 25px;
-    }
-    .icon-3>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-3>i {
-        margin-left: 25px;
-    }
-    .icon-4>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-4>i {
-        margin-left: 25px;
-    }
-    .icon-5>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-5>i {
-        margin-left: 25px;
-    }
-    .icon-6>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-6>i {
-        margin-left: 25px;
-    }
-    .icon-3 {
-        float: left;
-        margin: 0;
-    }
-    .icon-4 {
-        float: left;
-        margin: 0;
-    }
-    .icon-5 {
-        float: left;
-        margin: 0;
-    }
-    .icon-6 {
-        float: left;
-        margin: 0;
-    }
     .main-container {
         height: 900px;
+    }
+    .icones-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-right: 25px;
+    }
+    .icon-display>i {
+        margin-left: 20px;
+        font-size: 50px;
+    }
+    .icon-display>p {
+        margin-left: 109px;
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .icon-display>span {
+        margin-left: 20px;
+        font-size: 25px;
     }
 }
 
@@ -483,57 +291,23 @@ margin-left: 5px; */
         display: none;
         color: yellow;
     }
-    .icon-1 {
-        float: left;
+    .icones-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-right: 25px;
     }
-    .icon-2 {
-        float: left;
+    .icon-display>i {
+        font-size: 50px;
     }
-    .icon-1>p {
-        margin: 0 0 0 117px;
+    .icon-display>p {
+        margin-left: 90px;
+        font-size: 15px;
+        padding-bottom: 5px;
     }
-    .icon-1>i {
-        margin-left: 25px;
-    }
-    .icon-3>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-3>i {
-        margin-left: 25px;
-    }
-    .icon-4>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-4>i {
-        margin-left: 25px;
-    }
-    .icon-5>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-5>i {
-        margin-left: 25px;
-    }
-    .icon-6>p {
-        margin: 0 0 0 117px;
-    }
-    .icon-6>i {
-        margin-left: 25px;
-    }
-    .icon-3 {
-        float: left;
-        margin: 0;
-    }
-    .icon-4 {
-        float: left;
-        margin: 0;
-    }
-    .icon-5 {
-        float: left;
-        margin: 0;
-    }
-    .icon-6 {
-        float: left;
-        margin: 0;
+    .icon-display>span {
+        margin-left: 20px;
+        font-size: 25px;
     }
     .main-container {
         height: 900px;
