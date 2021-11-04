@@ -19,7 +19,7 @@
 
             <ul>
                 <i class="fas fa-bars " id="responsiveClick" onclick="abrir(); fechar();"></i >
-                <input type="checkbox" name="cheks" id="cheks">
+                <input type="checkbox" name="cheks" id="cheks" onclick="fix()">
                 <!-- <i class="fas fa-bars "  id="responsiveClicado"onclick=" abrir () ;"></i > -->
                 <li id="lista">Home</li>
                 <li  id="lista">Produtos</li>
@@ -115,14 +115,12 @@
     const navScroll = document.getElementsByTagName("nav")[0];
     const navTop = navScroll.offsetTop;
 
-
     function fix() {
-        if (window.pageYOffset >= navTop) {
+        if (window.pageYOffset >= navTop || window.screen.width < 700) {
             navScroll.classList.add("nav-fixed");
         } else {
             nav.classList.remove("nav-fixed");
         }
-
 
     }
 </script>
