@@ -21,7 +21,7 @@
 }
 
 .img-main {
-    background: url("https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?cs=srgb&dl=pexels-fauxels-3184460.jpg&fm=jpg");
+    background: url("assets/main-background.webp");
     height: 600px;
     width: 100%;
     background-repeat: no-repeat;
