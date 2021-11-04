@@ -33,45 +33,41 @@ body {
     /* border-bottom: 3px solid var(--vermelhonav); */
 }
 
-.pizza-main>.btn-acessa:hover {
+.content-pizza>.btn-acessa:hover {
     background-color: rgb(57, 99, 55);
 }
 
-.pizza-main>.btn-acessa {
+.content-pizza>.btn-acessa {
+    float: left;
+    margin-left: 90px;
+    justify-content: flex-start;
     font-size: 1.4rem;
     background-color: rgb(75, 139, 73);
     border: none;
-    position: absolute;
-    top: 54%;
-    left: 20%;
     transform: translate(-50%, -50%);
 }
 
-.pizza-main>.btn-saiba {
-    color: white;
+.content-pizza>.btn-saiba {
+    float: left;
+    color: rgb(0, 0, 0);
     border-color: white;
     font-size: 1.4rem;
-    position: absolute;
-    top: 54%;
-    left: 30%;
     transform: translate(-50%, -50%);
 }
 
-.pizza-main>h1 {
+.content-pizza>.btn-saiba:hover {
+    background-color: white;
+}
+
+.content-pizza>h1 {
     font-family: 'Lobster', cursive;
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 50px;
 }
 
-.pizza-main>p {
+.content-pizza>p {
     color: white;
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 50px;
 }
 
 .content-main {
@@ -97,7 +93,7 @@ body {
 }
 
 .content-extra>h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lobster', cursive;
     color: black;
 }
 
@@ -178,88 +174,31 @@ p {
     background-repeat: no-repeat; */
 }
 
-@media screen and (min-height: 400px) and (max-height:510px) {
-    .pizza-main>.btn-acessa {
-        font-size: 1.4rem;
-        border: none;
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .pizza-main>.btn-saiba {
-        font-size: 1.4rem;
-        position: absolute;
-        top: 77%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .pizza-main>h1 {
-        font-family: 'Lobster', cursive;
-        color: white;
-        position: absolute;
-        padding-bottom: 10px;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .pizza-main>p {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 100px) and (max-width:610px) {
-    .pizza-main>.btn-acessa {
-        font-size: 1.4rem;
-        border: none;
-        position: absolute;
-        top: 53%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .pizza-main>.btn-saiba {
-        font-size: 1.4rem;
-        position: absolute;
-        top: 61%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width:1350px) {
-    .content-carrousel {
+@media screen and (max-width: 583px) {
+    .content-pizza>.btn-acessa {
+        text-align: center;
+        width: 50%;
         float: right;
-    }
-    .pizza-main>.btn-acessa {
-        font-size: 1.4rem;
-        border: none;
-        position: absolute;
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+        /* position: absolute;
         top: 54%;
-        left: 25%;
-        transform: translate(-50%, -50%);
+        left: 20%; */
     }
-    .pizza-main>.btn-saiba {
-        font-size: 1.4rem;
-        position: absolute;
-        top: 54%;
-        left: 56%;
-        transform: translate(-50%, -50%);
-    }
-    .pizza-main>h1 {
-        font-family: 'Lobster', cursive;
+    .content-pizza>.btn-saiba {
+        width: 50%;
+        float: right;
+        text-align: center;
+        display: block;
+        font-size: 1.6rem;
         color: white;
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
-    .pizza-main>p {
-        color: white;
-        position: absolute;
-        font-size: 10px;
-        top: 37%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+    .content-extra>h2 {
+        font-size: 25px;
     }
 }
 
@@ -273,13 +212,6 @@ p {
     .pizza-main {
         height: 384px;
     }
-    /* .pizza-main>.btn-saiba {
-        font-size: 1.4rem;
-        position: absolute;
-        top: 54%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-    } */
     .pizza-main>h1 {
         font-family: 'Lobster', cursive;
         color: white;
@@ -292,8 +224,5 @@ p {
         color: white;
         position: absolute;
         font-size: 14px;
-        top: 37%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 }
