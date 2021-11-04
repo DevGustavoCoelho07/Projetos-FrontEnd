@@ -44,8 +44,18 @@ nav {
     position: fixed;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lista {
+    margin: 0 3px;
+}
+
 .main>nav>ul>li {
-    float: right;
+    /* float: right; */
     background-color: black;
     color: white;
     padding: 15px;
@@ -149,7 +159,7 @@ nav {
     font-size: 25px;
 }
 
-*/ .social-footer {
+.social-footer {
     background-color: white;
     height: 400px;
     text-align: center;
@@ -181,10 +191,13 @@ nav {
         font-size: 20px;
     }
     #lista {
+        margin: 0 auto;
         display: none;
-        float: none;
+        margin: none;
+        /* float: left; */
     }
     .main>nav>ul>li {
+        margin: 0 auto;
         float: none;
         display: none;
     }
@@ -209,6 +222,9 @@ nav {
 }
 
 @media only screen and (min-width: 401px) and (max-width: 800px) {
+    ul {
+        display: block;
+    }
     #cheks {
         display: block;
         cursor: pointer;
@@ -220,7 +236,6 @@ nav {
     }
     #cheks:checked~#lista {
         display: block;
-        float: left;
         background-color: black;
         color: white;
         padding: 15px;
@@ -244,10 +259,12 @@ nav {
         margin-left: 5px;
     }
     #lista {
+        margin: 0 auto;
         display: none;
         float: none;
     }
     .main>nav>ul>li {
+        margin: 0 auto;
         float: none;
         display: none;
     }
