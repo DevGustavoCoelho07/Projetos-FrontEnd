@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Nome</label>
+        <input type="text" id="name" onclick="removeErrors()"><br>
+        <label for="ageRegister">Idade</label>
+        <input type="text" name="ageRegister" id="age"><br>
+        <input type="submit" value="Enviar" name="btn-send" id="btnsend">
+
+    </form>
+</body>
+<script>
+    const name = document.getElementById("name")
+    const removeErrors = () =>{
+
+        name.classList.remove('erro')
+    }
+
+    let btnsend = document.getElementById("btnsend")
+    btnsend.addEventListener('click',(e)=>{
+        e.preventDefault()
+        const name = document.getElementById("name")
+    
+    if(name.value == ''){
+        name.classList.add('erro')
+    }
+    })
+
+    
+</script>
+</html>
