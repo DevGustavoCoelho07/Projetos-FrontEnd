@@ -1,3 +1,9 @@
 .erro{
     border: 3px solid red;
 }
+.errM{
+    color:red;
+}
+.hidden{
+    display: none;
+}

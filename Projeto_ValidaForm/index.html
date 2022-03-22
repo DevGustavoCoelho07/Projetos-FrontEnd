@@ -12,12 +12,21 @@
     <form action="">
         <label for="name">Nome</label>
         <input type="text" id="name" onclick="removeErrors(this)"><br>
+        <small class="hidden errM">Preencha este campo</small><br>
+
         <label for="pass">Senha</label>
         <input type="text" id="pass" onclick="removeErrors(this)">
+        <small class="hidden errM">Preencha este campo</small><br>
+
         <label for="pass-repeat">Confirmar Senha</label>
         <input type="text" id="pass-repeat" onclick="removeErrors(this)"><br>
+        <small class="hidden errM">Preencha este campo</small><br>
+
         <label for="ageRegister">Idade</label>
         <input type="text" name="ageRegister" id="age" onclick="removeErrors(this)"><br>
+        <small class="hidden errM">Preencha este campo</small><br>
+
+
         <input type="submit" value="Enviar" name="btn-send" id="btnsend">
 
     </form>
@@ -25,12 +34,21 @@
 <script>
     const name = document.getElementById("name")
     const age = document.getElementById("age")
+    const inputs = document.querySelector('input')
     const pass = document.getElementById("pass")
+    const errM = document.querySelectorAll('small')
+
+    // const errM = document.getElementsByClassName('errM')
+  
+    // const errorField = document.createElement('p')
     const passRepeat = document.getElementById("pass-repeat")
     const special = "!@#$%&*:"
+    const txtErr = document.createTextNode("Preencha Esse campo")
+  
+
 
     const removeErrors = (r) =>{
-        r.classList.remove('erro')
+        r.classList.remove('erro')       
     }
 
     let btnsend = document.getElementById("btnsend")
@@ -38,40 +56,57 @@
         e.preventDefault()
     
     if(name.value == ''){
+       errM[0].classList.remove('hidden')
         name.classList.add('erro')
  
     }
 
 
     if(age.value == ''){
+        errM[1].classList.remove('hidden')
+
         age.classList.add('erro')
     }
 
 
      if(pass.value == ''){
+        errM[2].classList.remove('hidden')
+
         pass.classList.add('erro')
 
     }
     if(passRepeat.value == ''){
+        errM[3].classList.remove('hidden')
+
         passRepeat.classList.add('erro')
     }
 
     if(pass.value.length < 8){
+        errM[4].classList.remove('hidden')
+
         pass.classList.add('erro')
 
     }
 
     if(pass.value.indexOf(special) == -1){
+        errM[5].classList.remove('hidden')
+
         pass.classList.add('erro')
 
     }
 
     if(passRepeat.value !== pass.value){
-        passRepeat.classList.add('erro')
-    }
+        errM[6].classList.remove('hidden')
+
+        passRepeat.classList('erro')
+   }
 
 
-    })
+
+
+    
+ 
+})
 
     
 </script>
