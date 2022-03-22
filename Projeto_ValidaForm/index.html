@@ -8,9 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Cadastre-se</h1>
     <form action="">
         <label for="name">Nome</label>
         <input type="text" id="name" onclick="removeErrors(this)"><br>
+        <label for="pass">Senha</label>
+        <input type="text" id="pass" onclick="removeErrors(this)">
+        <label for="pass-repeat">Confirmar Senha</label>
+        <input type="text" id="pass-repeat" onclick="removeErrors(this)"><br>
         <label for="ageRegister">Idade</label>
         <input type="text" name="ageRegister" id="age" onclick="removeErrors(this)"><br>
         <input type="submit" value="Enviar" name="btn-send" id="btnsend">
@@ -20,11 +25,12 @@
 <script>
     const name = document.getElementById("name")
     const age = document.getElementById("age")
+    const pass = document.getElementById("pass")
+    const passRepeat = document.getElementById("pass-repeat")
+    const special = "!@#$%&*:"
 
     const removeErrors = (r) =>{
-
         r.classList.remove('erro')
-
     }
 
     let btnsend = document.getElementById("btnsend")
@@ -33,11 +39,38 @@
     
     if(name.value == ''){
         name.classList.add('erro')
+ 
     }
+
 
     if(age.value == ''){
         age.classList.add('erro')
     }
+
+
+     if(pass.value == ''){
+        pass.classList.add('erro')
+
+    }
+    if(passRepeat.value == ''){
+        passRepeat.classList.add('erro')
+    }
+
+    if(pass.value.length < 8){
+        pass.classList.add('erro')
+
+    }
+
+    if(pass.value.indexOf(special) == -1){
+        pass.classList.add('erro')
+
+    }
+
+    if(passRepeat.value !== pass.value){
+        passRepeat.classList.add('erro')
+    }
+
+
     })
 
     
