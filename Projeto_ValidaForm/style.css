@@ -1,5 +1,5 @@
 *{
-    margin:0;
+   
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -24,25 +24,41 @@ h1{
 
 .container-items{
     background-color: aliceblue;
-    padding: 85px 100px;
+    padding: 65px 140px;
 }
 
-input {
-    display: flex;
+input[type=text],input[type=password] {
+margin-bottom: 2px;
 background-color: rgb(198, 216, 250);
 padding: 8px;
 margin-left: 20px;
-border: none;
 
+}
 
+.main-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-send{
+background-color: #c6d8fa;
+border: 1 solid #95adda;
+padding: 16px;
+width: 50%;
+margin-top: 5px;
 }
 
 .erro{
-    border: 1px solid red;
+    border: 2px solid red;
+
 }
 .errM{
     color:red;
+
 }
 .hidden{
     display: none;
+}
+small{
+    margin:20px;
 }
