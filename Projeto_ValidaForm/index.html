@@ -8,28 +8,31 @@
     <title>Document</title>
 </head>
 <body>
+<section class="container">
+    <div class="container-items">
     <h1>Cadastre-se</h1>
     <form action="">
         <label for="name">Nome</label>
-        <input type="text" id="name" onclick="removeErrors(this)"><br>
+        <input type="text" id="name" onclick="removeErrors(this)">
         <small class="hidden errM">Preencha este campo Nome</small><br>
 
         <label for="pass">Senha</label>
-        <input type="text" id="pass" onclick="removeErrors(this)">
+        <input type="password" id="pass" onclick="removeErrors(this)">
         <small class="hidden errM">Preencha este campo Senha</small><br>
 
         <label for="pass-repeat">Confirmar Senha</label>
-        <input type="text" id="pass-repeat" onclick="removeErrors(this)"><br>
+        <input type="password" id="pass-repeat" onclick="removeErrors(this)">
         <small class="hidden errM">Preencha este campo Confirmar</small><br>
 
         <label for="age">Idade</label>
-        <input type="text" name="age" id="age" onclick="removeErrors(this)"><br>
+        <input type="text" name="age" id="age" onclick="removeErrors(this)">
         <small class="hidden errM">Preencha este campo Idade</small><br>
         
-        <br><br>
+
 
         <input type="submit" value="Enviar" name="btn-send" id="btnsend">
-
+    </div>
+</section>
     </form>
 </body>
 <script>
@@ -39,14 +42,14 @@
     const pass = document.getElementById("pass")
     const errM = document.querySelectorAll('small')
 
+
     // const errM = document.getElementsByClassName('errM')
   
     // const errorField = document.createElement('p')
     const passRepeat = document.getElementById("pass-repeat")
-    const special = "!@#$%&*:"
+   // const special = "!"
     const txtErr = document.createTextNode("Preencha Esse campo")
   
-
 
     const removeErrors = (r) =>{
         r.classList.remove('erro')
@@ -83,37 +86,60 @@
      if(pass.value == ''){
         errM[1].classList.remove('hidden')
         pass.classList.add('erro')
+        errM[1].innerText = "Preencha esse campo"
 
-    }else{
+
+
+      } else if(pass.value.length < 8){
+        errM[1].classList.remove('hidden')
+        pass.classList.add('erro')
+        errM[1].innerText = "Senha precisa ter no Mínimo 8 caracteres"
+
+       }
+
+
+    //    else if(pass.value.indexOf(special) == -1){
+    //     errM[1].classList.remove('hidden')
+    //     errM[1].innerText = "Senha precisa ter caracteres Especiais"
+    //     pass.classList.add('erro')
+
+    // }
+
+else{
         errM[1].classList.add('hidden')
     }
-    if(passRepeat.value == ''){
-        errM[2].classList.remove('hidden')
-        passRepeat.classList.add('erro')
-    }else{
-        errM[2].classList.add('hidden')
-    }
+
+if(passRepeat.value == ''){
+    errM[2].classList.remove('hidden')
+    passRepeat.classList.add('erro')
+}else{
+    errM[2].classList.add('hidden')
+}
+
     
 
  
 
-    if(pass.value.length < 8){
-        errM[1].classList.remove('hidden')
-        pass.classList.add('erro')
+                                    // if(pass.value.length < 8){
+                                    //     errM[1].classList.remove('hidden')
+                                    //     pass.classList.add('erro')
+                                    //     errM[1].innerText = "Senha precisa ter no Mínimo 8 caracteres"
 
-    }else{
-        errM[1].classList.add('hidden')
 
-    }
+                                    // }else{
+                                    //     errM[1].classList.add('hidden')
 
-    if(pass.value.indexOf(special) == -1){
-        errM[1].classList.remove('hidden')
-        pass.classList.add('erro')
+                                    // }
 
-    }else{
-        errM[1].classList.add('hidden')
+                                    // if(pass.value.indexOf(special) == -1){
+                                    //     errM[1].classList.remove('hidden')
+                                    //     errM[1].innerText = "Senha precisa ter caracteres Especiais"
+                                    //     pass.classList.add('erro')
 
-    }
+                                    // }else{
+                                    //     errM[1].classList.add('hidden')
+
+                                    // }
 
 
    if(passRepeat.value !== pass.value){
@@ -124,8 +150,9 @@
 //         errM[2].classList.add('hidden')
 
 //     }
-
-
+if((pass.value.length) >8  && (inputs.value !== '') && (passRepeat.value == pass.value)){
+    alert('a')
+}
 
 
     
