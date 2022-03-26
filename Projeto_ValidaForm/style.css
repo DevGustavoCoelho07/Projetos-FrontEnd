@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 750px;
     
 
 }
@@ -24,14 +24,16 @@ h1{
 
 .container-items{
     background-color: aliceblue;
-    padding: 65px 140px;
+    border-left: 1px solid #c6d8fa;
+    border-bottom:1px solid #c6d8fa ;
+    padding: 45px 180px;
     text-align: center;
 
 }
 
 input[type=text],input[type=password],input[type=number] {
-margin: 8px 0;
-background-color: rgb(198, 216, 250);
+margin: 2px 0;
+background-color: #c6d8fa;
 padding: 10px;
 
 
@@ -39,19 +41,26 @@ padding: 10px;
 
 .main-btn {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .btn-send{
-background-color: #c6d8fa;
-border: 1 solid #95adda;
+height: 20px;
+text-align: center;
+justify-content: center;
+display: flex;
+align-items: center;
+text-align: center;
+width: 80%;
+background-color: #fff8b5;
+border: 1 solid #ffb13d;
 padding: 16px;
-width: 50%;
-margin-top: 5px;
+margin-top: 25px;
 transition: 1s;
 }
 .btn-send:hover{
-background-color: #5e83c9;   
+background-color: #ffb13d;   
 }
 
 .erro{
