@@ -25,13 +25,16 @@ h1{
 .container-items{
     background-color: aliceblue;
     padding: 65px 140px;
+    text-align: center;
+
 }
 
-input[type=text],input[type=password] {
+input[type=text],input[type=password],input[type=number] {
 margin-bottom: 2px;
 background-color: rgb(198, 216, 250);
-padding: 8px;
+padding: 10px;
 margin-left: 20px;
+
 
 }
 
@@ -46,6 +49,10 @@ border: 1 solid #95adda;
 padding: 16px;
 width: 50%;
 margin-top: 5px;
+transition: 1s;
+}
+.btn-send:hover{
+background-color: #5e83c9;   
 }
 
 .erro{
@@ -55,10 +62,11 @@ margin-top: 5px;
 .errM{
     color:red;
 
+
 }
 .hidden{
     display: none;
 }
 small{
-    margin:20px;
+
 }
