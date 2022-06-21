@@ -1,14 +1,21 @@
 # Projetos-FrontEnd
-Projetos Front end em geral.
 
-Segue a lista de projetos Front End desenvolvidos até o presente momento:
+Este repositório é uma coleção de projetos FrontEnd, onde é atualizado a medida que novos projetos são criados.
 
-##
+## Visite a página dos projetos disponibilizados no repositório!
 
-- [Conceito de Site Responsivo](https://devgustavocoelho07.github.io/Projetos-FrontEnd/MiniSiteResponsivo/) <br>
+- [Página responsiva](https://devgustavocoelho07.github.io/Projetos-FrontEnd/MiniSiteResponsivo/) <br>
 - [Site de Pizzaria feito em Bootstrap](https://devgustavocoelho07.github.io/Projetos-FrontEnd/Projeto_Site_em_Bootstrap/)
+- [Site de Pizzaria V2](https://devgustavocoelho07.github.io/Projetos-FrontEnd/Pizza_Pronta/)
 - [Janela Modal](https://devgustavocoelho07.github.io/Projetos-Javascript/Modal/)
+
+
+Para projetos mais específicos são criados repositórios dinstintos, como por exemplo o [Gerador de Lorem Ipsum](https://github.com/DevGustavoCoelho07/Gerador_de_Lorem)
+
+
 #
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
 <div style="display:inline;">
