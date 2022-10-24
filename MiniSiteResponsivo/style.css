@@ -1,332 +1,317 @@
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    font-family: roboto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: roboto;
 }
 
 #responsiveClick {
-    display: none;
+  display: none;
 }
 
 #cheks {
-    display: none;
-    visibility: visible;
+  display: none;
+  visibility: visible;
 }
 
 .main {
-    background-color: black;
-    color: rgb(255, 255, 254);
-    height: 600px;
+  background-color: black;
+  color: rgb(255, 255, 254);
+  height: 600px;
 }
 
 .img-main {
-    background: url("assets/main-background.webp");
-    height: 600px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center top;
-    text-align: center;
+  background: url("assets/main-background.webp");
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.993);
-    height: 50px;
+  background-color: rgba(0, 0, 0, 0.993);
+  height: 50px;
 }
 
 .nav-fixed {
-    background-color: rgb(0, 0, 0);
-    height: 50px;
-    width: 100%;
-    float: right;
-    position: fixed;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  width: 100%;
+  float: right;
+  position: fixed;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #lista {
-    margin: 0 3px;
+  margin: 0 3px;
 }
 
-.main>nav>ul>li {
-    /* float: right; */
+.main > nav > ul > li {
+  /* float: right; */
+  background-color: black;
+  color: white;
+  padding: 15px;
+  display: block;
+}
+
+.main-content > button {
+  outline: none;
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 16px;
+  color: white;
+  font-size: 25px;
+  padding: 12px 25px 12px 25px;
+}
+
+.main-content {
+  margin: 0 auto;
+  /* só funciona se tiver width*/
+  width: 100%;
+  font-size: 40px;
+  top: 20%;
+  text-align: center;
+  margin-top: 100px;
+  /* position: absolute; */
+  display: inline-block;
+}
+
+.blurr {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+}
+
+.main-container {
+  background-color: rgb(221, 221, 221);
+  height: 750px;
+}
+
+.other-side {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  background-color: rgb(247, 232, 232);
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.other-side > h2 {
+  margin-bottom: 10px;
+}
+
+.barra {
+  background-color: rgb(175, 94, 62);
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding-top: 50px;
+}
+
+.barra > button {
+  outline: none;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 16px;
+  color: white;
+  font-size: 25px;
+  padding: 10px 30px 10px 30px;
+  margin-top: 20px;
+}
+
+.barra > span {
+  /* display: inline; */
+  margin-right: 10px;
+}
+
+.icones-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 25px;
+}
+
+.icon-display > i {
+  font-size: 50px;
+}
+
+.icon-display > p {
+  margin-left: 90px;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.icon-display > span {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.social-footer {
+  background-color: white;
+  height: 400px;
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 45px;
+  display: inline-block;
+  margin-top: 10%;
+}
+
+.social-icons > i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social-footer > p {
+  margin-top: 100px;
+}
+@media (min-width: 0px) and (max-width: 325px) {
+  .icon-display,
+  b {
+    font-size: 1.1em !important;
+  }
+  i {
+    font-size: 1.6em !important;
+  }
+
+  #responsiveClick {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+  .barra {
+    display: inline-block;
+  }
+  .other-side {
+    height: 30vh;
+  }
+  .icon-display,
+  i,
+  b {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 800px) {
+  ul {
+    display: block;
+  }
+  #cheks {
+    display: block;
+    cursor: pointer;
+    visibility: visible !important;
+    width: 950px;
+    left: -880px;
+    top: 15px;
+    position: absolute;
+  }
+  #cheks:checked ~ #lista {
+    display: block;
     background-color: black;
     color: white;
     padding: 15px;
     display: block;
-}
-
-.main-content>button {
-    outline: none;
-    display: block;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    border-radius: 16px;
-    color: white;
-    font-size: 25px;
-    padding: 12px 25px 12px 25px;
-}
-
-.main-content {
-    margin: 0 auto;
-    /* só funciona se tiver width*/
-    width: 100%;
-    font-size: 40px;
-    top: 20%;
-    text-align: center;
-    margin-top: 100px;
-    /* position: absolute; */
+    left: 0;
+    visibility: visible;
+  }
+  /* #cheks:checked+.nav-fixed {
+        height: 500px;
+    } */
+  #responsiveClick {
+    font-size: 30px;
     display: inline-block;
-}
-
-.blurr {
-    height: 500px;
-    width: 100%;
-    position: absolute;
-}
-
-.main-container {
-    background-color: rgb(221, 221, 221);
-    height: 750px;
-}
-
-.other-side {
-    padding-top: 20px;
-    margin-bottom: 50px;
-    background-color: rgb(247, 232, 232);
-    text-align: center;
-    width: 100%;
-    height: 200px;
-    display: block;
-}
-
-.other-side>h2 {
-    margin-bottom: 10px;
-}
-
-.barra {
-    background-color: rgb(175, 94, 62);
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    padding-top: 50px;
-}
-
-.barra>button {
-    outline: none;
-    display: inline;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    border-radius: 16px;
-    color: white;
-    font-size: 25px;
-    padding: 10px 30px 10px 30px;
-    margin-top: 20px;
-}
-
-.barra>span {
-    /* display: inline; */
-    margin-right: 10px;
-}
-
-.icones-info {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #responsiveClicado {
+    font-size: 30px;
+    display: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #lista {
+    margin: 0 auto;
+    display: none;
+    float: none;
+  }
+  .main > nav > ul > li {
+    margin: 0 auto;
+    float: none;
+    display: none;
+  }
+  .main-container {
+    height: 1000px;
+  }
+  .icones-info {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-right: 25px;
-}
-
-.icon-display>i {
+  }
+  .icon-display > i {
+    margin-left: 20px;
     font-size: 50px;
-}
-
-.icon-display>p {
-    margin-left: 90px;
+  }
+  .icon-display > p {
+    margin-left: 109px;
     font-size: 15px;
-    padding-bottom: 5px;
-}
-
-.icon-display>span {
+    padding-bottom: 10px;
+  }
+  .icon-display > span {
     margin-left: 20px;
     font-size: 25px;
+  }
 }
-
-.social-footer {
-    background-color: white;
-    height: 400px;
-    text-align: center;
-}
-
-.social-icons {
-    font-size: 45px;
-    display: inline-block;
-    margin-top: 10%;
-}
-
-.social-icons>i {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.social-footer>p {
-    margin-top: 100px;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 400px) {
-    #responsiveClick {
-        display: inline;
-        font-size: 20px;
-    }
-    #responsiveClicado {
-        display: none;
-        color: yellow;
-        font-size: 20px;
-    }
-    #lista {
-        margin: 0 auto;
-        display: none;
-        margin: none;
-        /* float: left; */
-    }
-    .main>nav>ul>li {
-        margin: 0 auto;
-        float: none;
-        display: none;
-    }
-    .icones-info {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-right: 25px;
-    }
-    .icon-display>i {
-        font-size: 50px;
-    }
-    .icon-display>p {
-        margin-left: 90px;
-        font-size: 15px;
-        padding-bottom: 5px;
-    }
-    .icon-display>span {
-        margin-left: 20px;
-        font-size: 25px;
-    }
-}
-
-@media only screen and (min-width: 401px) and (max-width: 800px) {
-    ul {
-        display: block;
-    }
-    #cheks {
-        display: block;
-        cursor: pointer;
-        visibility: visible!important;
-        width: 950px;
-        left: -880px;
-        top: 15px;
-        position: absolute;
-    }
-    #cheks:checked~#lista {
-        display: block;
-        background-color: black;
-        color: white;
-        padding: 15px;
-        display: block;
-        left: 0;
-        visibility: visible;
-    }
-    /* #cheks:checked+.nav-fixed {
-        height: 500px;
-    } */
-    #responsiveClick {
-        font-size: 30px;
-        display: inline-block;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    #responsiveClicado {
-        font-size: 30px;
-        display: none;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    #lista {
-        margin: 0 auto;
-        display: none;
-        float: none;
-    }
-    .main>nav>ul>li {
-        margin: 0 auto;
-        float: none;
-        display: none;
-    }
-    .main-container {
-        height: 900px;
-    }
-    .icones-info {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-right: 25px;
-    }
-    .icon-display>i {
-        margin-left: 20px;
-        font-size: 50px;
-    }
-    .icon-display>p {
-        margin-left: 109px;
-        font-size: 15px;
-        padding-bottom: 10px;
-    }
-    .icon-display>span {
-        margin-left: 20px;
-        font-size: 25px;
-    }
-}
-
 
 /*                 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {} */
 
 @media only screen and (min-width: 801px) and (max-width: 1600px) {
-    #responsiveClick {
-        /* font-size: 30px;
+  #responsiveClick {
+    /* font-size: 30px;
 display: inline-block;
 margin-top: 5px;
 margin-left: 5px; */
-        display: none;
-    }
-    #responsiveClicado {
-        display: none;
-        color: yellow;
-    }
-    .icones-info {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-right: 25px;
-    }
-    .icon-display>i {
-        font-size: 50px;
-    }
-    .icon-display>p {
-        margin-left: 90px;
-        font-size: 15px;
-        padding-bottom: 5px;
-    }
-    .icon-display>span {
-        margin-left: 20px;
-        font-size: 25px;
-    }
-    .main-container {
-        height: 900px;
-    }
+    display: none;
+  }
+  #responsiveClicado {
+    display: none;
+    color: yellow;
+  }
+  .icones-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 25px;
+  }
+  .icon-display > i {
+    font-size: 50px;
+  }
+  .icon-display > p {
+    margin-left: 90px;
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .icon-display > span {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  .main-container {
+    height: 900px;
+  }
 }
